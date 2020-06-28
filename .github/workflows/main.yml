@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: pwa-example
-        path: ./dist/pwa-example
+        path: ./dist/PWA-Example
