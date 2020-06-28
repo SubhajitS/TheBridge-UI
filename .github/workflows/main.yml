@@ -43,3 +43,18 @@ jobs:
       with:
         tag_name: github.GITHUB_REF
         release_name: 'Release v1.0.1'
+
+    # Deploy
+    - name: Azure WebApp
+      uses: Azure/webapps-deploy@v2
+      with:
+        # Name of the Azure Web App
+        app-name: subhajits
+        # Applies to Web App only: Publish profile (*.publishsettings) file contents with Web Deploy secrets
+        publish-profile: subhajits.PublishSettings
+        # Enter an existing Slot other than the Production slot
+        # slot-name: # optional, default is production
+        # Applies to Web App only: Path to package or folder. *.zip, *.war, *.jar or a folder to deploy
+        # package: # optional, default is .
+        # Enter the start up command. For ex. dotnet run or dotnet run
+        # startup-command: # optional
