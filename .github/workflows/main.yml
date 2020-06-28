@@ -37,13 +37,6 @@ jobs:
         name: pwa-example
         path: ./dist/PWA-Example
     
-    # Create a release 
-    - name: Create a Release
-      uses: actions/create-release@v1.1.1
-      with:
-        tag_name: github.GITHUB_REF
-        release_name: 'Release v1.0.1'
-
     # Deploy
     - name: Azure WebApp
       uses: Azure/webapps-deploy@v2
