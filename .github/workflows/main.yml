@@ -22,6 +22,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Check npm version
-      run: npm -v
+    # Runs npm install to get dependencies
+    - name: npm install step
+      run: npm i
+    
+    # Runs npm build
+    - name: ng build step
+      run: ng build --prod
