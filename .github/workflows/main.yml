@@ -23,9 +23,9 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs npm install to get dependencies
-    - name: npm install step
+    - name: Dependency install step
       run: npm i
     
     # Runs npm build
-    - name: ng build step
-      run: ng build --prod
+    - name: App build step
+      run: npm run build-prod
