@@ -1,6 +1,8 @@
 # PWAExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0. This is a sample PWA project.
+
+![Build & Deploy](https://github.com/SubhajitS/PWA-Example/workflows/Build%20&%20Deploy/badge.svg)
 
 ## Development server
 
