@@ -1,0 +1,7 @@
+{
+    "name": "node-server",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}

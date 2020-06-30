@@ -28,7 +28,7 @@ jobs:
     
     # Runs npm build
     - name: App build step
-      run: npm run build-prod
+      run: npm run package
 
     # Publish the artifacts
     - name: Upload a Build Artifact
@@ -50,4 +50,4 @@ jobs:
         # Applies to Web App only: Path to package or folder. *.zip, *.war, *.jar or a folder to deploy
         package: ./dist/PWA-Example
         # Enter the start up command. For ex. dotnet run or dotnet run
-        # startup-command: # optional
+        startup-command: node index.js
