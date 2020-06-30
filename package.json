@@ -10,8 +10,8 @@
     "e2e": "ng e2e",
     "build-prod": "ng build --prod",
     "copy": "copyfiles -u 1 server/index.js server/package.json dist/PWA-Example",
-    "install": "cd ./dist/PWA-Example && npm i",
-    "package": "npm run build-prod && npm run copy && npm run install"
+    "install-express": "cd ./dist/PWA-Example && npm i",
+    "package": "npm run build-prod && npm run copy && npm run install-express"
   },
   "private": true,
   "dependencies": {
