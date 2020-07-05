@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-ripple-element {
+    z-index: -1 !important;
+}
+.mat-ripple {
+    z-index: 50; // 50 for example
+}

@@ -1,0 +1,10 @@
+article {
+    padding: 15px;
+    .row {
+        display: flex;
+        app-card {
+            margin-right: 5px;
+        }
+        margin-bottom: 5px;
+    }
+}

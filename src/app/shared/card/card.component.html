@@ -1,0 +1,269 @@
+<section matRipple matRippleColor="#f2f2f2" *ngIf="icon && index!== undefined" [ngStyle]="{'color': icon.color}">
+    <header>
+        <span>{{index}}</span>
+        <i>
+            {{icon.iconUnicode}}
+        </i>
+    </header>
+    <article>
+        <ng-container [ngSwitch]="index">
+            <div class="ace" *ngSwitchCase="'A'">
+                <i>
+                    {{icon.iconUnicode}}
+                </i>
+            </div>
+            <div *ngSwitchCase="'K'">
+                <img src="../../../assets/icons/king.jpg" alt="King"/>
+            </div>
+            <div *ngSwitchCase="'Q'">
+                <img src="../../../assets/icons/queen.jpg" alt="Queen"/>
+            </div>
+            <div *ngSwitchCase="'J'">
+                <img src="../../../assets/icons/jack.jpg" alt="Jack"/>
+            </div>
+            <div *ngSwitchCase="'10'">
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'9'">
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'8'">
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'7'">
+                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'6'">                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'5'">                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'4'">                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>                    
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'3'">                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>                    
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+            <div *ngSwitchCase="'2'">                
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+                <span class="row">
+                    <i>
+                        {{icon.iconUnicode}}
+                    </i>
+                </span>
+            </div>
+        </ng-container>
+    </article>
+    <footer>
+        <span>{{index}}</span>
+        <i>
+            {{icon.iconUnicode}}
+        </i>
+    </footer>
+</section>
