@@ -1,17 +1,58 @@
+$startColor: #3244eb;
+$endColor: #de3685;
 article {
     padding: 15px;
+    display: flex;
+    background-color: linear-gradient(to bottom right, $startColor, $endColor);
+    .west-panel {
+        height: calc(100vh - 30px);
+        width: 20vw;
+        .row {
+            transform: rotateZ(90deg);
+            margin-top: 85%;
+        }
+        .player {
+            margin-top: 55%;
+        }
+    }
+    .mid-panel {
+        flex-direction: column;
+        flex-grow: 1;
+        .north-panel {
+            height: calc(30vh - 15px);
+        }
+        .board-panel {
+            height: 40vh;
+        }
+        .south-panel {
+            height: calc(30vh - 15px);
+        }
+    }
+    .east-panel {
+        height: calc(100vh - 30px);
+        width: 20vw;
+        .row {
+            transform: rotateZ(270deg);
+            margin-top: 85%;
+        }
+        .player {
+            margin-top: 55%;
+        }
+    }
     .player {
         font-weight: 600;
         font-size: 20px;
         padding-bottom: 10px;
         display: block;
+        text-align: center;
     }
     .row {
         display: flex;
+        justify-content: center;
         app-card {
             margin-right: 5px;
         }
-        margin-bottom: 5px;
+        padding: 5px 0px;
     }
     .hand app-card:not(:first-child) {
         margin-left: -90px;
