@@ -1,10 +1,19 @@
 article {
     padding: 15px;
+    .player {
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 10px;
+        display: block;
+    }
     .row {
         display: flex;
         app-card {
             margin-right: 5px;
         }
         margin-bottom: 5px;
+    }
+    .hand app-card:not(:first-child) {
+        margin-left: -90px;
     }
 }

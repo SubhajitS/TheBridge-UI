@@ -1,22 +1,10 @@
-<article>  
-  <div class="row">
-    <ng-container *ngFor="let i of indexes">
-      <app-card [index]="i" [type]="typeSpades"></app-card>
-    </ng-container>
-  </div>
-  <div class="row">
-    <ng-container *ngFor="let i of indexes">
-      <app-card [index]="i" [type]="typeHearts"></app-card>
-    </ng-container>
-  </div>
-  <div class="row">
-    <ng-container *ngFor="let i of indexes">
-      <app-card [index]="i" [type]="typeDiamonds"></app-card>
-    </ng-container>
-  </div>
-  <div class="row">
-    <ng-container *ngFor="let i of indexes">
-      <app-card [index]="i" [type]="typeClubs"></app-card>
-    </ng-container>
-  </div>
+<article>
+  <ng-container *ngFor="let p of hands">
+    <span class="player">{{p.player}}</span>
+    <div class="row hand">
+      <ng-container *ngFor="let c of p.cards">
+        <app-card [index]="c.index" [type]="c.type"></app-card>
+      </ng-container>
+    </div>
+  </ng-container>
 </article>

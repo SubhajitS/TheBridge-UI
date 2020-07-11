@@ -8,8 +8,16 @@ import { CardType, CardIndex } from '../../types';
 })
 export class CardComponent implements OnInit, OnChanges {
 
-  @Input() index: CardIndex;
+  @Input() 
+  get index(): CardIndex{
+    return this._index;
+  }
+  set index(value: CardIndex) {
+    this._index = CardIndex[value];
+  }
   @Input() type: CardType;
+
+  private _index: CardIndex;
 
   icon: { color: '#FF0000' | '#000', iconUnicode: '♣' | '♦' | '♥' | '♠' } = undefined;
 
