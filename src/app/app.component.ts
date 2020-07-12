@@ -1,21 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { PlayersHand } from './types';
-import { DealHandService } from './bridge/deal-hand.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  constructor(private dealHand: DealHandService) { }
+  constructor() { }
 
   title = 'PWA-Example';
-  hands: Array<PlayersHand>;
-
-  ngOnInit() {
-    this.hands = this.dealHand.deal(['North', 'East', 'South', 'West']);
-    console.log(this.hands);
-  }
+  
 }

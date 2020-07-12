@@ -1,0 +1,63 @@
+$startColor: #3244eb;
+$endColor: #de3685;
+article {
+    padding: 15px;
+    display: flex;
+    background-image: linear-gradient(to bottom right, $startColor, $endColor);
+    .west-panel {
+        height: calc(100vh - 30px);
+        width: 20vw;
+        .row {
+            transform: rotateZ(90deg);
+            margin-top: 85%;
+        }
+        .player {
+            margin-top: 55%;
+        }
+    }
+    .mid-panel {
+        flex-direction: column;
+        flex-grow: 1;
+        .north-panel {
+            height: calc(20vh - 15px);
+        }
+        .board-panel {
+            height: 40vh;
+        }
+        .south-panel {
+            height: calc(40vh - 15px);
+        }
+    }
+    .east-panel {
+        height: calc(100vh - 30px);
+        width: 20vw;
+        .row {
+            transform: rotateZ(270deg);
+            margin-top: 85%;
+        }
+        .player {
+            margin-top: 55%;
+        }
+    }
+    .player {
+        font-weight: 600;
+        font-size: 20px;
+        padding-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        app-card {
+            margin-right: 5px;
+        }
+        padding: 5px 0px;
+    }
+    .hand app-card:not(:first-child) {
+        margin-left: -90px;
+    }
+    .eject {
+        margin-bottom: 25px;
+    }
+}
