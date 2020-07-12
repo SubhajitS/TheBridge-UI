@@ -3,7 +3,7 @@ $endColor: #de3685;
 article {
     padding: 15px;
     display: flex;
-    background-color: linear-gradient(to bottom right, $startColor, $endColor);
+    background-image: linear-gradient(to bottom right, $startColor, $endColor);
     .west-panel {
         height: calc(100vh - 30px);
         width: 20vw;

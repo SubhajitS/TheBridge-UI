@@ -1,11 +1,20 @@
+$height: 180px;
+$width: 100px;
+$pad: 10px;
+
+@function calc-back($value1, $value2) {
+    @return $value1 + 2 * $value2;
+}
+
 section {
-    width: 100px;
-    height: 180px;
-    padding: 10px;
+    width: $width;
+    height: $height;
+    padding: $pad;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
+
     header {
         font-size: 20px;
         line-height: 20px;
@@ -24,7 +33,7 @@ section {
         > div {
             align-self: center;
         }
-        >div.ace {
+        > div.ace {
             font-size: 70px;
         }
         .row {
@@ -44,4 +53,13 @@ section {
             display: block;
         }
     }
+    .back {
+        height: calc-back($height, $pad);
+        width: calc-back($width, $pad);
+        position: relative;
+        margin: -10px;
+    }
+}
+.selected {
+    margin-top: -90px;
 }

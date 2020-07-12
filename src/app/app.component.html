@@ -2,7 +2,7 @@
   <section class="west-panel">
     <div class="row hand">
       <ng-container *ngFor="let c of hands[3].cards">
-        <app-card [index]="c.index" [type]="c.type"></app-card>
+        <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
       </ng-container>
     </div>
     <span class="player">{{hands[3].player}}</span>
@@ -11,7 +11,7 @@
     <section class="north-panel">
       <div class="row hand">
         <ng-container *ngFor="let c of hands[0].cards">
-          <app-card [index]="c.index" [type]="c.type"></app-card>
+          <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
         </ng-container>
       </div>
       <span class="player">{{hands[0].player}}</span>
@@ -29,17 +29,9 @@
   <section class="east-panel">
     <div class="row hand">
       <ng-container *ngFor="let c of hands[1].cards">
-        <app-card [index]="c.index" [type]="c.type"></app-card>
+        <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
       </ng-container>
     </div>
     <span class="player">{{hands[1].player}}</span>
   </section>
-  <!-- <ng-container *ngFor="let p of hands">
-    
-    <div class="row hand">
-      <ng-container *ngFor="let c of p.cards">
-        <app-card [index]="c.index" [type]="c.type"></app-card>
-      </ng-container>
-    </div>
-  </ng-container> -->
 </article>
