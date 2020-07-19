@@ -1,0 +1,55 @@
+$startColor: #3244eb;
+$endColor: #de3685;
+$navColor: #1b1f3b;
+article {
+    min-height: 50px;
+    max-height: 150px;
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, $startColor, $endColor);
+    min-height: 100vh;
+    .login {
+        background-color: $navColor;
+        border-radius: 20px;
+        height: 150px;
+        min-width: 100px;
+        flex: 0 1 30%;
+        padding: 20px;
+        color: #fff;
+        box-shadow: 7px 10px 15px 0px #000;
+        button {
+            align-self: flex-end;
+            height: 40px;
+            width: 100px;
+        }
+    }
+    nav {
+        background-color: $navColor;
+        align-self: flex-start;
+        display: flex;
+        width: calc(100% - 20px);
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        > h2 {
+            color: #fff;
+            margin: 0;
+        }
+        > .logout > span {
+            font-size: 1.2rem;
+            color: #fff;
+            padding-right: 20px;
+        }
+    }
+    .main-content {
+        width: 100%;
+        >*:not(router-outlet) {
+            width: 100%;
+        }
+    }    
+}
+.show-login {
+    justify-content: center;
+}

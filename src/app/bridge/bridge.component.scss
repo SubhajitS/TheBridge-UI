@@ -1,42 +1,52 @@
-$startColor: #3244eb;
-$endColor: #de3685;
-article {
+.container {
     padding: 15px;
     display: flex;
-    background-image: linear-gradient(to bottom right, $startColor, $endColor);
+    flex-direction: row;
+    flex: 1 1 100%;
     .west-panel {
-        height: calc(100vh - 30px);
-        width: 20vw;
-        .row {
+        height: calc(100vh - 86px);
+        flex: 0 1 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hand {
             transform: rotateZ(90deg);
-            margin-top: 85%;
+            app-card:not(:first-child) {
+                margin-left: -90px;
+            }
         }
         .player {
-            margin-top: 55%;
         }
     }
     .mid-panel {
         flex-direction: column;
-        flex-grow: 1;
+        flex: 1 1 60%;
+        height: calc(100vh - 86px);
+
         .north-panel {
-            height: calc(20vh - 15px);
+            height: 20%;
         }
         .board-panel {
-            height: 40vh;
+            height: 40%;
         }
         .south-panel {
-            height: calc(40vh - 15px);
+            height: 40%;
         }
     }
     .east-panel {
-        height: calc(100vh - 30px);
-        width: 20vw;
-        .row {
-            transform: rotateZ(270deg);
-            margin-top: 85%;
+        height: calc(100vh - 86px);
+        flex: 0 1 20%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        .hand {
+            transform: rotateZ(90deg);
+            app-card:not(:first-child) {
+                margin-left: -90px;
+            }
         }
         .player {
-            margin-top: 55%;
         }
     }
     .player {
@@ -55,7 +65,7 @@ article {
         padding: 5px 0px;
     }
     .hand app-card:not(:first-child) {
-        margin-left: -90px;
+        margin-left: -65px;
     }
     .eject {
         margin-bottom: 25px;

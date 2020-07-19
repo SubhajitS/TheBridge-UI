@@ -14,3 +14,10 @@ body {
 .mat-ripple {
     z-index: 50; // 50 for example
 }
+.mat-fab {
+    height: 36px !important;
+    width: 36px !important;
+    .mat-button-wrapper {
+        padding: 6px 0px !important; 
+    }
+}

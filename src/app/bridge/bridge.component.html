@@ -1,42 +1,42 @@
-<article>
-    <section class="west-panel">
+<section class="container">
+  <section class="west-panel">
+    <div class="row hand">
+      <ng-container *ngFor="let c of hands[3].cards">
+        <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
+      </ng-container>
+    </div>
+    <span class="player">{{hands[3].player}}</span>
+  </section>
+  <section class="mid-panel">
+    <section class="north-panel">
       <div class="row hand">
-        <ng-container *ngFor="let c of hands[3].cards">
+        <ng-container *ngFor="let c of hands[0].cards">
           <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
         </ng-container>
       </div>
-      <span class="player">{{hands[3].player}}</span>
+      <!-- <span class="player">{{hands[0].player}}</span> -->
     </section>
-    <section class="mid-panel">
-      <section class="north-panel">
-        <div class="row hand">
-          <ng-container *ngFor="let c of hands[0].cards">
-            <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
-          </ng-container>
-        </div>
-        <span class="player">{{hands[0].player}}</span>
-      </section>
-      <section class="board-panel"></section>
-      <section class="south-panel">
-        <div class="row eject">
-          <button mat-fab color="accent" aria-label="Give the selected card">
-            <mat-icon>eject</mat-icon>
-          </button>
-        </div>
-        <div class="row hand">
-          <ng-container *ngFor="let c of hands[2].cards">
-            <app-card [index]="c.index" [type]="c.type"></app-card>
-          </ng-container>
-        </div>
-        <span class="player">{{hands[2].player}}</span>
-      </section>
-    </section>
-    <section class="east-panel">
+    <section class="board-panel"></section>
+    <section class="south-panel">
+      <div class="row eject">
+        <button mat-fab color="accent" aria-label="Give the selected card">
+          <mat-icon>eject</mat-icon>
+        </button>
+      </div>
       <div class="row hand">
-        <ng-container *ngFor="let c of hands[1].cards">
-          <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
+        <ng-container *ngFor="let c of hands[2].cards">
+          <app-card [index]="c.index" [type]="c.type"></app-card>
         </ng-container>
       </div>
-      <span class="player">{{hands[1].player}}</span>
+      <!-- <span class="player">{{hands[2].player}}</span> -->
     </section>
-  </article>
+  </section>
+  <section class="east-panel">
+    <div class="row hand">
+      <ng-container *ngFor="let c of hands[1].cards">
+        <app-card [index]="c.index" [type]="c.type" display="hide"></app-card>
+      </ng-container>
+    </div>
+    <span class="player">{{hands[1].player}}</span>
+  </section>
+</section>

@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<article [ngClass]="{'show-login':!loggedIn}">
+    <section class="login" *ngIf="!loggedIn">
+        <h2>The Bridge</h2>
+        <p>Lets play a round of contract bridge!</p>
+        <button mat-raised-button color="accent" (click)="login()">Login</button>
+    </section>
+    <nav *ngIf="loggedIn">
+        <h2>The Bridge</h2>
+        <div class="logout">
+            <span>{{name}}</span>
+            <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+        </div>
+    </nav>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+</article>
