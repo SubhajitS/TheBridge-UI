@@ -45,9 +45,9 @@ export class AppComponent implements OnInit {
     const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
 
     if (isIE) {
-      this.authService.ssoSilent({});
-    } else {
       this.authService.loginPopup();
+    } else {
+      this.authService.loginRedirect();
     }
   }
 
